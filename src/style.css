@@ -4,7 +4,10 @@ font-family: "Inter", sans-serif;*/
 :root {
   --heading-font-family: "Syne", sans-serif;
   --default-font-family: "Inter", sans-serif;
-  --secondary-color: #cdd8ec;
+  --primary-color: #cdd8ec;
+  --secondary-color: #d3f0e7;
+  --tertiary-color: #fbddf7;
+  --highlight-color: #fceadd;
   --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -12,7 +15,6 @@ body {
   font-family: var(--default-font-family);
   font-size: 21px;
   font-weight: 400;
-  margin: 0;
   overflow-x: hidden;
 }
 
@@ -37,7 +39,7 @@ a {
 }
 
 .hero {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .hero h2 {
@@ -110,6 +112,24 @@ a {
 
 .project-img-left img {
   border-radius: 0px 45px 45px 0px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  max-width: 75%;
+  margin: 80px auto 50px;
+  padding: 20px 0px;
+}
+
+.contact-box-text p {
+  font-size: 18px;
+}
+
+.contact-box-button {
+  margin: 30px;
 }
 
 @media (max-width: 1100px) {
