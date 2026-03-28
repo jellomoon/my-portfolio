@@ -5,15 +5,35 @@ font-family: "Inter", sans-serif;*/
   --heading-font-family: "Syne", sans-serif;
   --default-font-family: "Inter", sans-serif;
   --secondary-color: #cdd8ec;
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 body {
   font-family: var(--default-font-family);
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 h1,
 h2 {
   font-family: var(--heading-font-family);
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+a {
+  font-size: 18px !important;
+  font-weight: 400 !important;
 }
 
 .hero {
@@ -54,6 +74,44 @@ h2 {
   padding-left: 30px;
 }
 
+.project-content {
+  margin-top: 100px;
+}
+
+.project-text-right {
+  margin-left: 100px;
+}
+
+.project-text-left {
+  margin-right: 100px;
+}
+
+.project-img-right {
+  margin-right: calc(-1 * (100vw - 100%));
+  padding-right: 0;
+}
+
+.project-img-left {
+  margin-left: calc(-1 * (100vw - 100%));
+  padding-left: 0;
+}
+
+.project-img-right img,
+.project-img-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: var(--box-shadow);
+}
+
+.project-img-right img {
+  border-radius: 45px 0px 0px 45px;
+}
+
+.project-img-left img {
+  border-radius: 0px 45px 45px 0px;
+}
+
 @media (max-width: 1100px) {
   .image-card img {
     display: none;
@@ -79,6 +137,7 @@ h2 {
   .hero h1 {
     text-align: center;
     margin: 20px 0 0 0 !important;
+    padding-bottom: 20px;
     font-size: clamp(48px, 8vw, 68px);
   }
 
@@ -96,5 +155,22 @@ h2 {
   .hero a {
     display: inline-block;
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 990px) {
+  h2 {
+    font-size: clamp(28px, 5vw, 38px);
+  }
+
+  h3,
+  p {
+    font-size: clamp(16px, 5vw, 21px);
+  }
+
+  .project-text-right,
+  .project-text-left {
+    margin: 0px;
+    text-align: center;
   }
 }
