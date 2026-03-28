@@ -23,6 +23,11 @@ h2 {
   font-family: var(--heading-font-family);
 }
 
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
 h2 {
   font-size: 38px;
   font-weight: 600;
@@ -40,6 +45,10 @@ a {
 
 .hero {
   background-color: var(--primary-color);
+}
+
+.my-name {
+  font-size: 120px;
 }
 
 .hero h2 {
@@ -67,10 +76,6 @@ a {
   font-family: "Tilt Warp", sans-serif;
 }
 
-.my-name {
-  font-size: 120px;
-}
-
 .sub-heading {
   padding-top: clamp(40px, 12vh, 120px);
   padding-left: 30px;
@@ -84,11 +89,13 @@ a {
   margin-left: 100px;
 }
 
-.project-text-left {
+.project-text-left,
+.about-text {
   margin-right: 100px;
 }
 
-.project-img-right {
+.project-img-right,
+.about-img {
   margin-right: calc(-1 * (100vw - 100%));
   padding-right: 0;
 }
@@ -99,14 +106,15 @@ a {
 }
 
 .project-img-right img,
-.project-img-left img {
+.project-img-left img .about-img img {
   width: 100%;
   height: auto;
   display: block;
   box-shadow: var(--box-shadow);
 }
 
-.project-img-right img {
+.project-img-right img,
+.about-img img {
   border-radius: 45px 0px 0px 45px;
 }
 
@@ -197,6 +205,17 @@ a {
 }
 
 @media (max-width: 768px) {
+  .about-text {
+    margin: 0px;
+    text-align: center;
+  }
+
+  .about-img img {
+    display: flex;
+    border-radius: 20px;
+    margin: 20px 0px;
+  }
+
   .contact-box {
     flex-direction: column;
     text-align: center;
