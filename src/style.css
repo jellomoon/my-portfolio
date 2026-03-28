@@ -31,7 +31,8 @@ h2 {
 
 .image-card img {
   width: 100%;
-  height: 500px;
+  height: 60vh;
+  max-height: 500px;
   object-fit: cover;
   grid-area: 1 / 1;
 }
@@ -41,13 +42,59 @@ h2 {
   align-self: center;
   justify-self: center;
   color: white;
+  font-family: "Tilt Warp", sans-serif;
 }
 
 .my-name {
-  font-family: "Tilt Warp", sans-serif;
   font-size: 120px;
 }
 
 .sub-heading {
-  padding-top: 120px;
+  padding-top: clamp(40px, 12vh, 120px);
+  padding-left: 30px;
+}
+
+@media (max-width: 1100px) {
+  .image-card img {
+    display: none;
+  }
+
+  .hero {
+    background-image: url("/src/images/pastel-oil-spill.png");
+  }
+
+  .hero .row {
+    display: block !important;
+  }
+
+  .hero .row > div {
+    width: 100%;
+    flex: none;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    text-align: center;
+    margin: 20px 0 0 0 !important;
+    font-size: clamp(48px, 8vw, 68px);
+  }
+
+  .hero h2 {
+    font-size: clamp(28px, 5vw, 36px);
+    margin-bottom: 5px !important;
+  }
+
+  .sub-heading {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .hero a {
+    display: inline-block;
+    margin-top: 15px;
+  }
 }
