@@ -53,6 +53,10 @@ img {
   border-radius: 10px;
 }
 
+.nav-item {
+  padding: 0 10px;
+}
+
 .hero {
   background-color: var(--primary-color);
 }
