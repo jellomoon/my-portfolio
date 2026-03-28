@@ -90,12 +90,12 @@ a {
 }
 
 .project-text-left,
-.about-text {
+.content-text {
   margin-right: 100px;
 }
 
 .project-img-right,
-.about-img {
+.edge-img {
   margin-right: calc(-1 * (100vw - 100%));
   padding-right: 0;
 }
@@ -106,7 +106,7 @@ a {
 }
 
 .project-img-right img,
-.project-img-left img .about-img img {
+.project-img-left img .edge-img img {
   width: 100%;
   height: auto;
   display: block;
@@ -114,7 +114,7 @@ a {
 }
 
 .project-img-right img,
-.about-img img {
+.edge-img img {
   border-radius: 45px 0px 0px 45px;
 }
 
@@ -185,6 +185,16 @@ a {
     display: inline-block;
     margin-top: 15px;
   }
+
+  .content-text {
+    margin: 0px;
+  }
+
+  .edge-img img {
+    display: flex;
+    border-radius: 20px;
+    margin: 20px 0px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -205,17 +215,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  .about-text {
-    margin: 0px;
-    text-align: center;
-  }
-
-  .about-img img {
-    display: flex;
-    border-radius: 20px;
-    margin: 20px 0px;
-  }
-
   .contact-box {
     flex-direction: column;
     text-align: center;
