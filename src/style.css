@@ -95,11 +95,13 @@ img {
   text-align: center;
   min-height: clamp(200px, 40vw, 500px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.title-card h1 {
+.title-card h1,
+.title-card h3 {
   color: white;
   margin: 0 auto;
 }
