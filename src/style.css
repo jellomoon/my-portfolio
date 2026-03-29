@@ -173,6 +173,10 @@ img {
   margin: 30px 5px;
 }
 
+.copyright {
+  font-size: 18px;
+}
+
 .secret {
   color: var(--tertiary-color);
 }
