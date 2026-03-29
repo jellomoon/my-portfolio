@@ -154,6 +154,15 @@ img {
   border-radius: 0px 45px 45px 0px;
 }
 
+.hover-color {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.hover-color:hover {
+  filter: grayscale(0%);
+}
+
 .contact-box {
   display: flex;
   justify-content: space-evenly;
