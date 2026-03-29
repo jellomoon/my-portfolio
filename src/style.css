@@ -187,6 +187,10 @@ a:hover .hover-color {
   font-size: 18px;
 }
 
+.copyright a:hover {
+  text-decoration: none;
+}
+
 .secret {
   color: var(--tertiary-color);
 }
