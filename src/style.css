@@ -9,6 +9,7 @@ font-family: "Inter", sans-serif;*/
   --tertiary-color: #fbddf7;
   --highlight-color: #fceadd;
   --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --edge-offset: calc(100vw - 100%);
 }
 
 body {
@@ -33,14 +34,17 @@ h2 {
   font-weight: 600;
 }
 
+h3,
+h4 {
+  font-weight: 500;
+}
+
 h3 {
   font-size: 32px;
-  font-weight: 500;
 }
 
 h4 {
   font-size: 21px;
-  font-weight: 500;
 }
 
 a {
@@ -129,12 +133,12 @@ img {
 
 .project-img-right,
 .edge-img {
-  margin-right: calc(-1 * (100vw - 100%));
+  margin-right: calc(-1 * var(--edge-offset));
   padding-right: 0;
 }
 
 .project-img-left {
-  margin-left: calc(-1 * (100vw - 100%));
+  margin-left: calc(-1 * var(--edge-offset));
   padding-left: 0;
 }
 
@@ -142,7 +146,6 @@ img {
 .project-img-left img,
 .edge-img img {
   width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -160,18 +163,18 @@ img {
   transition: filter 0.3s ease;
 }
 
-.hover-color:hover {
+a:hover .hover-color {
   filter: grayscale(0%);
 }
 
 .contact-box {
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--primary-color);
-  border-radius: 20px;
-  max-width: 75%;
   margin: 80px auto 50px;
   padding: 20px;
+  max-width: 75%;
+  background-color: var(--primary-color);
+  border-radius: 20px;
 }
 
 .contact-box-text p {
@@ -237,13 +240,13 @@ img {
   }
 
   .content-text {
-    margin: 0px;
+    margin: 0;
   }
 
   .edge-img img {
     display: flex;
     border-radius: 20px;
-    margin: 20px 0px;
+    margin: 20px 0;
   }
 }
 
@@ -259,7 +262,7 @@ img {
 
   .project-text-right,
   .project-text-left {
-    margin: 0px;
+    margin: 0;
     text-align: center;
   }
 }
