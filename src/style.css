@@ -61,9 +61,6 @@ img {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.nav-item {
-  padding: 0 10px;
-}
 
 .hero {
   background-color: var(--primary-color);
@@ -94,7 +91,7 @@ img {
   justify-self: center;
   color: white;
   font-family: "Tilt Warp", sans-serif;
-  font-size: 120px;
+  font-size: clamp(52px, 12vw, 120px);
 }
 
 .sub-heading {
@@ -243,10 +240,15 @@ a:hover .hover-color {
     margin: 0;
   }
 
+  .edge-img {
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+  }
+
   .edge-img img {
-    display: flex;
+    display: block;
     border-radius: 20px;
-    margin: 20px 0;
   }
 }
 
