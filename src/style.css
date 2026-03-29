@@ -139,7 +139,8 @@ img {
 }
 
 .project-img-right img,
-.project-img-left img .edge-img img {
+.project-img-left img,
+.edge-img img {
   width: 100%;
   height: auto;
   display: block;
