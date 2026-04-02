@@ -9,14 +9,12 @@ font-family: "Inter", sans-serif;*/
   --tertiary-color: #fbddf7;
   --highlight-color: #fceadd;
   --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  --edge-offset: calc(100vw - 100%);
 }
 
 body {
   font-family: var(--default-font-family);
   font-size: 21px;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
 h1,
@@ -130,13 +128,18 @@ img {
 
 .project-img-right,
 .edge-img {
-  margin-right: calc(-1 * var(--edge-offset));
+  margin-right: calc(-1 * (100vw - 100%) / 2);
   padding-right: 0;
 }
 
 .project-img-left {
-  margin-left: calc(-1 * var(--edge-offset));
+  margin-left: calc(-1 * (100vw - 100%) / 2);
   padding-left: 0;
+}
+
+.project-img-right,
+.project-img-left {
+  max-width: 100vw;
 }
 
 .project-img-right img,
@@ -253,6 +256,12 @@ a:hover .hover-color {
   .edge-img img {
     display: block;
     border-radius: 20px;
+  }
+
+  .project-img-right,
+  .project-img-left {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
