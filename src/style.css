@@ -93,7 +93,7 @@ img {
 }
 
 .sub-heading {
-  padding-top: clamp(40px, 12vh, 70px);
+  padding-top: clamp(40px, 12vh, 100px);
   padding-left: 30px;
 }
 
