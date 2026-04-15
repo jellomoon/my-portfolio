@@ -5,9 +5,6 @@ font-family: "Inter", sans-serif;*/
   --heading-font-family: "Syne", sans-serif;
   --default-font-family: "Inter", sans-serif;
   --primary-color: #cdd8ec;
-  --secondary-color: #d3f0e7;
-  --tertiary-color: #fbddf7;
-  --highlight-color: #fceadd;
   --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -231,9 +228,8 @@ a:hover .hover-color {
   font-size: 32px;
 }
 
-.secret {
-  color: var(--tertiary-color);
-  font-size: 18px;
+.footer-on-contact-html {
+  margin-top: 100px;
 }
 
 @media (max-width: 1100px) {
